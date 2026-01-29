@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --cream: #FFFDF5;
+  --ochre: #D9A036;
+  --foreground: #2D2A26;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-inter), 'Inter', sans-serif;
+  background-color: var(--cream);
+  color: var(--foreground);
+}
+
+.font-serif {
+  font-family: var(--font-playfair), 'Playfair Display', serif;
+}
+
+.font-handwriting {
+  font-family: var(--font-caveat), 'Caveat', cursive;
+}
+
+.depth-shadow {
+  box-shadow: 0 20px 50px rgba(217, 160, 54, 0.1);
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--cream);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--ochre);
+  border-radius: 4px;
+}
